@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio de Hortie Adognibo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    section {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #2c3e50;
+    }
+
+    .btn {
+      background-color: #3498db;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background-color: #2980b9;
+    }
+
+    #extra-content {
+      display: none;
+      margin-top: 20px;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Hortie ADOGNIBO</h1>
+  <p>Étudiant en 1ère année du cycle Ingénieur en Informatique & IA à l'ENIAD</p>
+</header>
+
+<section>
+  <h2>À propos de moi</h2>
+  <p>Je suis passionné par l’intelligence artificielle, le développement web, et les nouvelles technologies. Actuellement en formation à l’ENIAD, je développe des projets pour mettre en pratique mes compétences.</p>
+</section>
+
+<section>
+  <h2>Compétences</h2>
+  <ul>
+    <li>Programmation : Python, JavaScript, C</li>
+    <li>Développement Web : HTML, CSS, React (débutant)</li>
+    <li>IA : Algorithmes, Machine Learning (initiation)</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Projets</h2>
+  <ul>
+    <li>Mini site de gestion des tâches (HTML/CSS/JS)</li>
+    <li>Simulation d’un chatbot simple</li>
+    <li>Initiation à l’analyse de données avec Python</li>
+  </ul>
+
+  <button class="btn" onclick="toggleMore()">Voir plus</button>
+
+  <div id="extra-content">
+    <p>Je travaille actuellement sur un projet de détection d'émotions à partir de texte, combinant traitement du langage naturel et apprentissage automatique.</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Hortie Adognibo • ENIAD</p>
+</footer>
+
+<script>
+  function toggleMore() {
+    const content = document.getElementById("extra-content");
+    const btn = document.querySelector(".btn");
+
+    if (content.style.display === "none") {
+      content.style.display = "block";
+      btn.textContent = "Voir moins";
+    } else {
+      content.style.display = "none";
+      btn.textContent = "Voir plus";
+    }
+  }
+</script>
+
+</body>
+</html>
